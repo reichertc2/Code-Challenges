@@ -1,8 +1,8 @@
-# Graph Challenges
+# Hash Table Challenges
 
 ## Challenge Summary 30
 
-Graphs
+Hash Tables
 
 ### Specifications
 
@@ -15,28 +15,21 @@ Graphs
 
 ### Features
 
-Implement your own Graph. The graph should be represented as an adjacency list, and should include the following methods:
+Implement a Hashtable Class with the following methods:
 
-- add node
-  - Arguments: value
-  - Returns: The added node
-  - Add a node to the graph
-- add edge
-  - Arguments: 2 nodes to be connected by the edge, weight (optional)
+- add
+  - Arguments: key, value
   - Returns: nothing
-  - Adds a new edge between two nodes in the graph
-  - If specified, assign a weight to the edge
-  - Both nodes should already be in the Graph
-- get nodes
-  - Arguments: none
-  - Returns all of the nodes in the graph as a collection (set, list, or similar)
-- get neighbors
-  - Arguments: node
-  - Returns a collection of edges connected to the given node
-    - Include the weight of the connection in the returned collection
-- size
-  - Arguments: none
-  - Returns the total number of nodes in the graph
+  - This method should hash the key, and add the key and value pair to the table, handling collisions as needed.
+- get
+  - Arguments: key
+  - Returns: Value associated with that key in the table
+- contains
+  - Arguments: key
+  - Returns: Boolean, indicating if the key exists in the table already.
+- hash
+  - Arguments: key
+  - Returns: Index in the collection for that key
 
 ### Structure and Testing
 
@@ -44,19 +37,17 @@ Utilize the Single-responsibility principle: any methods you write should be cle
 
 Write tests to prove the following functionality:
 
-1. Node can be successfully added to the graph
-1. An edge can be successfully added to the graph
-1. A collection of all nodes can be properly retrieved from the graph
-1. All appropriate neighbors can be retrieved from the graph
-1. Neighbors are returned with the weight between nodes included
-1. The proper size is returned, representing the number of nodes in the graph
-1. A graph with only one node and edge can be properly returned
-1. An empty graph properly returns null
+1. Adding a key/value to your hashtable results in the value being in the data structure
+1. Retrieving based on a key returns the value stored
+1. Successfully returns null for a key that does not exist in the hashtable
+1. Successfully handle a collision within the hashtable
+1. Successfully retrieve a value from a bucket within the hashtable that has a collision
+1. Successfully hash a key to an in-range value
 1. Ensure your tests are passing before you submit your solution.
 
 ### Whiteboard Process
 <!-- Embedded whiteboard image -->
-![Graphs](../code_challenges/wireframes/code-ch-35.png)
+![Hash Table](../code_challenges/wireframes/code-ch-30.png)
 
 ### Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->

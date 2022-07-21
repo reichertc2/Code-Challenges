@@ -77,7 +77,7 @@ The approach I took was to write the code first with an idea of getting to the e
 <!-- Description of the challenge -->
 Find the Maximum Value in a Binary Tree
 
-#### Binary Tree --> find_maximum_value()
+### Binary Tree --> find_maximum_value()
 
 Write the following method for the Binary Tree class
 

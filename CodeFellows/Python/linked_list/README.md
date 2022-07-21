@@ -1,7 +1,11 @@
-# Challenge Summary 05
+# Linked List Challenges
+
+## Challenge Summary 05
+
 Singly Linked Lists
 
-## Specifications
+### Specifications
+
 - Read all of these instructions carefully.
 - Name things exactly as described.
 - Do all your work in a your data-structures-and-algorithms public repository.
@@ -9,18 +13,17 @@ Singly Linked Lists
 - Follow the language-specific instructions for the challenge type listed below.
 - Update the “Table of Contents” - in the README at the root of the repository - with a link to this challenge’s README file.
 
-## Whiteboard Process
+### Whiteboard Process
 <!-- Embedded whiteboard image -->
 ![TBD](../code_challenges/wireframes/code-ch-05.png)
 
-## Approach & Efficiency
+### Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 The approach I took was to write the code first with an idea of getting to the end point.
 
-
-## Solution
+### Solution
 <!-- Show how to run your code, and examples of it in action -->
-```
+```PYTHON
 class Node:
     def __init__(self, value, next=None):
         self.value = value
@@ -52,10 +55,12 @@ class LinkedList:
         return output
 ```
 
-# Challenge Summary 06
+## Challenge Summary 06
+
 Extend a Linked List to allow various insertion methods
 
-## Specifications
+### Specifications
+
 - Read all of these instructions carefully.
 - Name things exactly as described.
 - Do all your work in a your data-structures-and-algorithms public repository.
@@ -63,25 +68,27 @@ Extend a Linked List to allow various insertion methods
 - Follow the language-specific instructions for the challenge type listed below.
 - Update the “Table of Contents” - in the README at the root of the repository - with a link to this challenge’s README file.
 
-## Whiteboard Process
+### Whiteboard Process
+
 <!-- Embedded whiteboard image -->
 ![TBD](../code_challenges/wireframes/code-ch-06.png)
 
-## Approach & Efficiency
+### Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 The approach I took was to write the code first with an idea of getting to the end point.
 
-
-## Solution
+### Solution
 <!-- Show how to run your code, and examples of it in action -->
-```
+```PYTHON
 TBD
 ```
 
-# Challenge Summary 07
+## Challenge Summary 07
+
 k-th value from the end of a linked list.
 
-## Specifications
+### Specifications
+
 - Read all of these instructions carefully.
 - Name things exactly as described.
 - Do all your work in a your data-structures-and-algorithms public repository.
@@ -89,19 +96,19 @@ k-th value from the end of a linked list.
 - Follow the language-specific instructions for the challenge type listed below.
 - Update the “Table of Contents” - in the README at the root of the repository - with a link to this challenge’s README file.
 
-## Whiteboard Process
+### Whiteboard Process
 <!-- Embedded whiteboard image -->
 ![Linked List - KTH - Whiteboard](../code_challenges/wireframes/code-ch-07.png)
 
-## Approach & Efficiency
+### Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 The approach I took was to write the code first with an idea of getting to the end point.
 
 The O space i believe is O(n) with the length of the linked list in question determines the run time.
 
-## Solution
+### Solution
 <!-- Show how to run your code, and examples of it in action -->
-```
+```PYTHON
     def kth_from_end(self, k_element):
         length_count = 0
         temp = self.head
@@ -123,4 +130,3 @@ The O space i believe is O(n) with the length of the linked list in question det
 
             return item.value
 ```
-

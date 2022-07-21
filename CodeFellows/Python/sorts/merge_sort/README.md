@@ -1,8 +1,8 @@
-# Stack and Queue Challenges
+# Insertion Sort Challeges
 
-## Challenge Summary 10
+## Challenge Summary 27
 
-Stack and Queue
+Merge Sort
 
 ### Specifications
 
@@ -15,7 +15,7 @@ Stack and Queue
 
 ### Whiteboard Process
 <!-- Embedded whiteboard image -->
-![TBD](../wireframes/code-ch-10.png)
+![Merge Sort](../code_challenges/wireframes/code-ch-27.png)
 
 ### Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
@@ -24,21 +24,5 @@ The approach I took was to write the code first with an idea of getting to the e
 ### Solution
 <!-- Show how to run your code, and examples of it in action -->
 ```PYTHON
-class PseudoQueue:
-
-    def __init__(self):
-        self.stack_in = Stack()
-        self.stack_out = Stack()
-
-    def dequeue(self,node = None):
-        while not self.stack_in.is_empty():
-            self.stack_out.push(self.stack_in.pop())
-        if self.stack_out.is_empty():
-            raise Exception
-        return self.stack_out.pop()
-
-    def enqueue(self,value):
-        while not self.stack_out.is_empty:
-            self.stack_in.push(self.stack_out.pop())
-        self.stack_in.push(value)
+TBD
 ```

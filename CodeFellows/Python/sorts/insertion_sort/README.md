@@ -1,8 +1,8 @@
-# Stack and Queue Challenges
+# Insertion Sort Challenges
 
-## Challenge Summary 10
+## Challenge Summary 26
 
-Stack and Queue
+Insertion Sort
 
 ### Specifications
 
@@ -15,30 +15,24 @@ Stack and Queue
 
 ### Whiteboard Process
 <!-- Embedded whiteboard image -->
-![TBD](../wireframes/code-ch-10.png)
+![Insertion_Sort](../code_challenges/wireframes/code-ch-26.png)
 
 ### Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 The approach I took was to write the code first with an idea of getting to the end point.
 
-### Solution
+## Solution
 <!-- Show how to run your code, and examples of it in action -->
 ```PYTHON
-class PseudoQueue:
+def insertion_sort(arr):
+    for i in len(arr):
+        j = i - 1
+        temp = arr[i]
 
-    def __init__(self):
-        self.stack_in = Stack()
-        self.stack_out = Stack()
+        while j >= 0 and temp < arr[j]:
+            arr[j + 1] = arr[j]
+            j = j -1
 
-    def dequeue(self,node = None):
-        while not self.stack_in.is_empty():
-            self.stack_out.push(self.stack_in.pop())
-        if self.stack_out.is_empty():
-            raise Exception
-        return self.stack_out.pop()
+        arr[j + 1] == temp
 
-    def enqueue(self,value):
-        while not self.stack_out.is_empty:
-            self.stack_in.push(self.stack_out.pop())
-        self.stack_in.push(value)
 ```

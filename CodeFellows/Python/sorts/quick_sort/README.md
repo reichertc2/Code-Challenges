@@ -1,8 +1,8 @@
-# Stack and Queue Challenges
+# Quick Sort Challenges
 
-## Challenge Summary 10
+## Challenge Summary 28
 
-Stack and Queue
+Quick Sort
 
 ### Specifications
 
@@ -15,7 +15,7 @@ Stack and Queue
 
 ### Whiteboard Process
 <!-- Embedded whiteboard image -->
-![TBD](../wireframes/code-ch-10.png)
+![Quick Sort](../code_challenges/wireframes/code-ch-28.png)
 
 ### Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
@@ -24,21 +24,20 @@ The approach I took was to write the code first with an idea of getting to the e
 ### Solution
 <!-- Show how to run your code, and examples of it in action -->
 ```PYTHON
-class PseudoQueue:
+def quick_sort(arr, left, right):
+    if left < right:
+        position = partition(arr, left, right)
+        quick_sort(arr, left, position - 1)
+        quick_sort(arr, position + 1, right)
 
-    def __init__(self):
-        self.stack_in = Stack()
-        self.stack_out = Stack()
 
-    def dequeue(self,node = None):
-        while not self.stack_in.is_empty():
-            self.stack_out.push(self.stack_in.pop())
-        if self.stack_out.is_empty():
-            raise Exception
-        return self.stack_out.pop()
-
-    def enqueue(self,value):
-        while not self.stack_out.is_empty:
-            self.stack_in.push(self.stack_out.pop())
-        self.stack_in.push(value)
+def partition(arr, left, right):
+    pivot = arr[right]
+    low = left - 1
+    for i in range(left,right):
+        if arr[i]<pivot:
+            low += 1
+            arr[low],arr[i] = arr[i],arr[i]
+    arr[low + 1],arr[right] = arr[right], arr[low + 1]
 ```
+<!-- good yutube overview --= https://www.youtube.com/watch?v=0SkOjNaO1XY -->
