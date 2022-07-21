@@ -7,4 +7,3 @@ This is a consolidation of all code challenges encountered through Code Fellows 
 ### Table of Contents
 
 1. ([Code Fellows Python](./Python/README.md))
-
