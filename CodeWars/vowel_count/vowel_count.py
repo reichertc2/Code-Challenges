@@ -1,5 +1,9 @@
 def get_count(sentence):
-    pass
+    count = 0
+    for letter in sentence:
+        if letter in 'aeiou':
+            count += 1
+    return count
 
 
 get_count('is vowel')
