@@ -15,3 +15,10 @@ def test_code_wars_2():
     expected = False
     actual = comp(a1,a2)
     assert actual == expected
+
+def test_code_wars_3():
+    a1 = []
+    a2 = []
+    expected = True
+    actual = comp(a1,a2)
+    assert actual == expected

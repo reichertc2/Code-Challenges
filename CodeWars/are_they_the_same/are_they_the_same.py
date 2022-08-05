@@ -9,6 +9,8 @@ def comp(array1, array2):
     # your code
     # array2 = list(array2)
     test_list = []
+    if array1 == [] and array2 == []:
+        return True
     for idx,number in enumerate(array1):
         if idx == 0:
 
