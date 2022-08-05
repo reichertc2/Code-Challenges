@@ -10,3 +10,4 @@ This is a consolidation of all code challenges encountered through practice at t
 1. ([Highest Lowest](./highest_lowest/README.md))
 1. ([Disemvowl Trolls](./disemvowel_trolls/README.md))
 1. ([Vowel Count](./vowel_count/README.md))
+1. ([Are They the Same](./are_they_the_same/README.md))
