@@ -6,6 +6,7 @@ def test_leetcode_1():
     sol = Solution()
     sol.addTwoNumbers()
 
+@pytest.mark.skip(reason="not finished")
 def test_build_node_list():
     num_list = [1,5,3,5]
     sol = Solution()
