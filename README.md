@@ -8,3 +8,4 @@ This is a consolidation of all code challenges encountered through coursework, p
 
 1. ([Code Fellows](./CodeFellows/README.md))
 1. ([CodeWars](./CodeWars/README.md))
+1. ([LeetCode](./LeetCode/README.md))
