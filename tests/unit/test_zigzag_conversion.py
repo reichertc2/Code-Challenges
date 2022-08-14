@@ -9,7 +9,7 @@ def test_leetcode_1():
     expected = "A"
     assert actual == expected
 
-# @pytest.mark.skip(reason="not finished")
+@pytest.mark.skip(reason="not finished")
 def test_leetcode_1_a():
     sol = Solution()
     actual = sol.convert("ABCD", 2)
