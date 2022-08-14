@@ -7,4 +7,6 @@ This is a consolidation of all code challenges encountered through practice at t
 ### Table of Contents
 
 1. ([FizzBuzz](./fizzbuzz/README.md)) &#9745;
+1. ([Remove Duplicates from Sorted Array](./remove_duplicates_sorted_array/README.md)) &#9745;
+
 <!-- &#9744; -->

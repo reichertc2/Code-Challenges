@@ -1,5 +1,5 @@
 import pytest
-from LeetCode.fizzbuzz.fizzbuzz import Solution
+from LeetCode.RandomProblems.fizzbuzz.fizzbuzz import Solution
 
 def test_fizzbuzz_3():
     expected = ['1','2','Fizz']

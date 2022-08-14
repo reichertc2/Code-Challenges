@@ -1,5 +1,5 @@
 import pytest
-from LeetCode.zigzag_conversion.zigzag_conversion import Solution
+from LeetCode.RandomProblems.zigzag_conversion.zigzag_conversion import Solution
 
 
 # @pytest.mark.skip(reason="not finished")

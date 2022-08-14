@@ -1,4 +1,4 @@
-from LeetCode.remove_duplicates_sorted_array.remove_duplicates_sorted_array import Solution
+from LeetCode.RandomProblems.remove_duplicates_sorted_array.remove_duplicates_sorted_array import Solution
 import pytest
 
 

@@ -1,5 +1,5 @@
 import pytest
-from LeetCode.add_two_numbers.add_two_numbers import Solution, ListNode
+from LeetCode.RandomProblems.add_two_numbers.add_two_numbers import Solution, ListNode
 
 @pytest.mark.skip(reason="not finished")
 def test_leetcode_1():
