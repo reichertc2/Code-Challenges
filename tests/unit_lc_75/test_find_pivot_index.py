@@ -1,7 +1,7 @@
 from LeetCode.LeetCode75_SP.find_pivot_index.find_pivot_index import Solution
 import pytest
 
-
+@pytest.mark.skip(reason="not ready")
 def test_leetcode_1():
     sol = Solution()
     nums = [1, 7, 3, 6, 5, 6]
